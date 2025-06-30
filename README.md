@@ -1,7 +1,7 @@
 # TamaguiSheetTest
 
-- View with flex={1}
-<pre>
+## View with flex={1}
+Results in a **strange behavior** of the Sheet component:
 ```typescript
 <View bg={"red"} py={12} flex={1}>
   <View gap={10} px={80}> Buttons.. 
@@ -17,11 +17,9 @@
       </Sheet>
     </View>
 ```
-</pre>
-Results in a strange behaviour of the Sheet-Component
 
-- View without flex={1}
-<pre>
+## View without flex={1}
+Results in normal behavior, but the Sheet is not at the bottom
 ```typescript
 <View bg={"red"} py={12}>
   <View gap={10} px={80}> Buttons.. 
@@ -37,5 +35,3 @@ Results in a strange behaviour of the Sheet-Component
       </Sheet>
     </View>
 ```
-</pre>
-Results in a normal behaviour but the Sheet is not at the bottom.
